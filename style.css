@@ -1,0 +1,43 @@
+@font-face {
+    font-family: IBM;
+    src: url(./IBMPlexSansKR-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'YEONGJUSeonbiTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/YEONGJUSeonbiTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.one {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+
+    top: 100px;
+    position: absolute;
+
+    z-index: 2;
+}
+
+.one:hover{
+    background-color: green;
+}
+
+.check:checked ~ .one {
+    background-color: blue;
+}
+
+.text:focus{
+    color: blue;
+}
+
+.link{
+    color: black;
+    font-family:YEONGJUSeonbiTTF ;
+    text-decoration: none;
+}
+
+.link:visited{
+    color: green;
+}
